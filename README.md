@@ -30,7 +30,7 @@ This phase has steps:
 
 Scripts need to be executed in following order:
 
-Step 1: DDL Script [myDBcreate.sql] 
+**Step 1: DDL Script [myDBcreate.sql]**<br> 
 It has a file containing the SQL statements that create entire database schema. 
 This includes the tables with their constraints, and views, indexes, and other objects as per the application requirement.
 Note: Tables have to be created in a specific order. Make sure to create the tables that do not reference any other tables first.
