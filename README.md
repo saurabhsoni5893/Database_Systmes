@@ -35,21 +35,21 @@ It has a file containing the SQL statements that create entire database schema.
 This includes the tables with their constraints, and views, indexes, and other objects as per the application requirement.
 Note: Tables have to be created in a specific order. Make sure to create the tables that do not reference any other tables first.
 
-Step 2: DML Script [myDBinsert.sql]
+**Step 2: DML Script [myDBinsert.sql]**<br>
 It has a file containing INSERT statements that populate the tables created in step 1.
 This script will contain SQL commands to fill data in the tables.
 
-Step 3: DML Update Script [myDBupdate.sql]
+**Step 3: DML Update Script [myDBupdate.sql]**<br>
 Create a script that will update the database through a series of Insertions, Deletes, and Updates. 
 This will allow to verify the correctness of the SQL queries when the database is updated/changed.
 
-Step 4: Drop script [myDBdrop.sql]
+**Step 4: Drop script [myDBdrop.sql]**<br>
 Create a script that will drop all the tables that have created for the project. This will be useful to start from a clean slate after some inserts and deletes have been added to the application to check the correctness of ad hoc queries. 
 One should be able to clean everything through this script and re-load the database instance using the above steps.
 Note: Make sure to drop tables that are not referenced by other tables first (in the reverse order of create tables). 
 If trying to drop a table that is being referenced by some other table, the DROP will fail.
 
-Step 5: Ad-hoc SQL queries [myDBqueries.sql]
+**Step 5: Ad-hoc SQL queries [myDBqueries.sql]**<br>
 Create a script with ad-hoc queries on the database, say myDBqueries.sql. This script should contain at least 6 queries on the database.
 1. At least 2 Queries on Multiple Relations containing GROUP BY, HAVING, and aggregate computations
 2. At least 2 Queries that corresponds to Data Analysis (as in a Data Warehouse). Should have CUBE and/or ROLLUP clauses.
